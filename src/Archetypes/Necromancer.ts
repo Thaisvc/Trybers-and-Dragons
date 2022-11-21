@@ -1,8 +1,9 @@
 import Archetype from './Archetype';
+import { EnergyType } from '../Energy';
 
 class Necromancer extends Archetype {
   private static _necromancer = 0;
-  private _energyType: string;
+  private _energyType: EnergyType;
 
   constructor(name: string) {
     super(name);
@@ -14,7 +15,7 @@ class Necromancer extends Archetype {
     return this._necromancer;
   }
 
-  get energyType(): string {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }

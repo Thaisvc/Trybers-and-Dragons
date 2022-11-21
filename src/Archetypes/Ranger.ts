@@ -1,8 +1,9 @@
 import Archetype from './Archetype';
+import { EnergyType } from '../Energy';
 
 class Ranger extends Archetype {
   private static _ranger = 0;
-  private _energyType: string;
+  private _energyType: EnergyType;
 
   constructor(name:string) {
     super(name);
@@ -14,7 +15,7 @@ class Ranger extends Archetype {
     return this._ranger;
   }
 
-  get energyType(): string {
+  get energyType(): EnergyType {
     return this._energyType;
   }
 }

@@ -34,7 +34,8 @@ class Monster implements SimpleFighter {
   }
 
   attack(enemy:SimpleFighter): void {
-    this.receiveDamage(enemy.strength);
+    enemy.receiveDamage(this.strength);
+    // this.receiveDamage(enemy.strength);
   }
 }
 

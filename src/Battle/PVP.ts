@@ -20,7 +20,7 @@ class PVP extends Battle {
   } */ // OUTRA OPÇ
 
   fight(): number {
-    if (this.player.lifePoints > 0 && this._player2.lifePoints > 0) {
+    while (this.player.lifePoints > 0 && this._player2.lifePoints > 0) {
       this.player.attack(this._player2);
       this._player2.attack(this.player);
     }
